@@ -1,0 +1,123 @@
+/* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.content {
+  padding: 20px;
+  flex-grow: 1;
+}
+.logo{
+  width: 250px
+}
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #4CAF50;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar ul li button:hover {
+  background-color: #388E3C;
+  color: white;
+}
+
+/* Task form */
+.task-form, .task-list, .task-manager {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-form form, .task-manager ul, .task-list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-form input, .task-manager input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.task-form button, .task-manager button, .task-list select {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-form button:hover, .task-manager button:hover, .task-list select:hover {
+  background-color: #388E3C;
+}
+
+/* Task list */
+.task-list ul {
+  list-style: none;
+}
+
+.task-list ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .task-form, .task-list, .task-manager {
+    margin-bottom: 10px;
+  }
+}
+.modifier{
+  margin: 10px ;
+}
